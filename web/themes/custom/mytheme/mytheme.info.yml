@@ -12,6 +12,9 @@ regions:
   side_highlighted: 'Side Highlighted'
   category_news1: 'Category News1'
   category_news2: 'Category News2'
+  b1: 'Left'
+  b2: 'Middle'
+  b3: 'Right'
   footer: 'Footer'
 
 libraries:

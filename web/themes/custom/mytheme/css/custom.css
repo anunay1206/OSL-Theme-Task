@@ -1,0 +1,21 @@
+#block-mytheme-views-block-tt1america-block-1 .view-tt1america{
+    padding: 10px
+}
+
+#block-mytheme-views-block-tt-block-1 .view-tt{
+    padding: 10px
+}
+
+
+.views-row, .views-view-responsive-grid__item-inner{
+    position: relative;
+}
+
+.views-field-field-title, .views-view-responsive-grid__item-inner .views-field-field-title{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 400px;
+    padding: 10px;
+}

@@ -98,7 +98,7 @@ set footer_classes = ' ' ~
     {{ page.side_highlighted }}
   </div>
 </div>
-
+<br>
 
 <div class="cat-news">
  <div class = "container-fluid">
@@ -108,9 +108,25 @@ set footer_classes = ' ' ~
 
 
 
-
+{# 
 <div role="taxonomy2" class="row">
     {{ page.category_news2 }}
+</div> #}
+
+{# <div role="left news" class="col-md-4">
+  {{ page.b1 }}
+</div> #}
+
+<div role="leftmiddleright" class="row">
+  <div class="col-md-4">
+    {{ page.b1 }}
+  </div>
+  <div class="col-md-4">
+    {{ page.b2 }}
+  </div>
+  <div class="col-md-4">
+    {{ page.b3 }}
+  </div>
 </div>
 {# <main role="main">
   <a id="main-content" tabindex="-1"></a>link is in html.html.twig #}

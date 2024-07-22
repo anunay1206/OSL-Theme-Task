@@ -44,7 +44,7 @@ const main = ($) => {
         // Category News Slider
     $('.cn-slider').slick({
         dots: false,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         arrows:true,
     });
