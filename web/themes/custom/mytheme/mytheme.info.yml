@@ -1,0 +1,18 @@
+name: 'New Theme'
+type: theme
+description: 'A new theme for New York Times'
+core_version_requirement: ^10
+base theme: bootstrap5
+
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  highlighted_news: 'Highlighted News' 
+  side_highlighted: 'Side Highlighted'
+  category_news1: 'Category News1'
+  category_news2: 'Category News2'
+  footer: 'Footer'
+
+libraries:
+  - mytheme/styling 

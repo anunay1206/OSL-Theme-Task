@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * Theme override to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link URL, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ */
+#}
+{% import _self as menus %}
+
+{#
+We call a macro which calls itself to render the full tree.
+@see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="/new_york_times/web/" class="nav-item nav-link active">Home</a>
+                            <a href="/new_york_times/web/asiatag" class="nav-item nav-link">Asia</a>
+                            <a href="/new_york_times/web/americatag" class="nav-item nav-link">America</a>
+                            <a href="/new_york_times/web/europetag" class="nav-item nav-link">Europe</a>
+                            <a href="/new_york_times/web/australiatag" class="nav-item nav-link">Australia</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News Location</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Asia</a>
+                                    <a href="#" class="dropdown-item">America</a>
+                                    <a href="#" class="dropdown-item">Europe</a>
+                                    <a href="#" class="dropdown-item">Australia</a>
+                                </div>
+                            </div>
+                            <a href="single-page.html" class="nav-item nav-link">Single Page</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <br>
